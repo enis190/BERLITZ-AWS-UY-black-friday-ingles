@@ -1,0 +1,103 @@
+.modalidad{
+    background-color: #C7F7FF;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    .item{
+        padding: 20px 45px;
+        .c-block{
+            background-color: #FFF;
+            -webkit-box-shadow: 0px 2px 12px -3px rgba(0,0,0,0.24);
+            -moz-box-shadow: 0px 2px 12px -3px rgba(0,0,0,0.24);
+            box-shadow: 0px 2px 12px -3px rgba(0,0,0,0.24);
+            border-radius: 15px;
+            figure{
+                overflow: hidden;
+                border-radius: 15px;
+                margin-bottom: 0px;
+            }
+            .txt{
+                //background-color: #FFF;
+                border-radius: 0px 0px 15px 15px;
+                padding: 20px;
+                h3{
+                    color: $COLOR_1;
+                    font-family: 'OpenSans-Regular'; 
+                    span{
+                        font-family: 'IBMPlexSans-BoldItalic';
+                    }
+                }
+                ul{
+                    li{
+                        color: #778299;
+                        strong{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .icon{
+                position: relative;
+                img{
+                    position: absolute;
+                    max-width: 100px;
+                    margin-left: -30px;
+                    margin-top: -20px;
+                }
+            }
+        }
+    }
+    .det{
+        p{
+            color: #121212;
+            span{
+                font-family: 'IBMPlexSans-BoldItalic';
+                color: $COLOR_1;
+            }
+        }
+    }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .modalidad{
+        .item{
+            .c-block{
+                figure{
+                }
+                .txt{
+                    min-height: 230px;
+                    h3{
+                        span{
+                        }
+                    }
+                    ul{
+                        li{
+                            strong{
+                            }
+                        }
+                    }
+                }
+                .icon{
+                    img{
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

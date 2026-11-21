@@ -1,0 +1,266 @@
+.ventajas {
+  background-color: #fff7ef;
+  //background-image: url(../img/bg-ventajas.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .titulo {
+    text-transform: uppercase;
+    color: #fd613f;
+    span {
+      color: #fff;
+      text-transform: initial;
+      clip-path: polygon(2% 0, 98% 0, 100% 100%, 0% 100%);
+      background-color: #ffc900;
+      padding: 5px 15px;
+      font-size: 1.5rem;
+    }
+    font {
+      font-family: "MatchadalgonaRegular-3zxGp";
+      display: block;
+      padding-left: 10px;
+      font-size: 2.8rem;
+      margin-top: 20px;
+    }
+  }
+
+  .btn-1 {
+    padding-left: 25px;
+    .c-fa {
+      animation: c_keyframe_2 2s;
+      -webkit-animation: c_keyframe_2 2s;
+      -moz-animation: c_keyframe_2 2s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+    }
+  }
+
+  .slider {
+    .item {
+      padding: 25px;
+      padding-top: 50px;
+      .c-block {
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        background-color: #fff;
+        text-align: center;
+        &:hover {
+          background-color: #fff;
+        }
+        .img {
+          margin-top: -70px;
+          .span {
+            //border: 2px dashed #000; /* 2px de grosor, guiones, color negro */
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 15px;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              padding: 2px; /* grosor del borde */
+              border-radius: 50%;
+              background: repeating-conic-gradient(
+                from 0deg,
+                #fb565a 0deg 10deg,
+                transparent 10deg 20deg
+              );
+              -webkit-mask: linear-gradient(#fb565a 0 0) content-box,
+                linear-gradient(#fb565a 0 0);
+              -webkit-mask-composite: xor;
+              mask-composite: exclude;
+              animation: girar 6s linear infinite;
+            }
+            
+          }
+          .span1 {
+              &::before {
+              content: "";
+              position: absolute;
+              inset: 0;
+              padding: 2px; /* grosor del borde */
+              border-radius: 50%;
+              background: repeating-conic-gradient(
+                from 0deg,
+                #7237c5 0deg 10deg,
+                transparent 10deg 20deg
+              );
+              -webkit-mask: linear-gradient(#7237c5 0 0) content-box,
+                linear-gradient(#7237c5 0 0);
+              -webkit-mask-composite: xor;
+              mask-composite: exclude;
+              animation: girar 6s linear infinite;
+            }
+            }
+        }
+        img {
+          max-height: 100px;
+          padding: 5px;
+        }
+        h3 {
+          color: #778299;
+          font-family: "IBMPlexSans-Bold";
+          font-size: 1rem;
+
+          span {
+            color: #0c0c6c;
+            // font-family: 'IBMPlexSans-SemiBoldItalic';
+          }
+        }
+        p {
+          font-size: 1rem;
+          color: #0c0c6c;
+          span {
+            color: #0c0c6c;
+          }
+        }
+      }
+    }
+  }
+  .slick-dots {
+    li {
+      button {
+        &::before {
+          background-color: #000;
+          border-radius: 50%;
+          width: 13px;
+          height: 13px;
+          content: "";
+          transition: 0.3s;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            background-color: $COLOR_1;
+            opacity: 1 !important;
+            width: 25px;
+            border-radius: 8px;
+            margin-left: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.ventajas-regalo {
+  background: #75e5d5;
+  padding-top: 30px;
+  //padding-bottom: 20px;
+  position: relative;
+  position: relative; /* Necesario para posicionar el hijo */
+  overflow: visible; /* Permite que la imagen sobresalga */
+  h3,
+  p {
+    color: #7237c5;
+  }
+  h3 {
+    font-family: "IBMPlexSans-SemiBoldItalic";
+  }
+  .txt {
+    padding-bottom: 40px;
+    padding-top: 30px;
+    p {
+      font-size: 1.3rem;
+      span {
+        font-family: "IBMPlexSans-BoldItalic";
+      }
+    }
+  }
+  .img {
+    position: relative;
+    span {
+      position: absolute;
+      bottom: 0; /* Pega la imagen al fondo del div principal */
+      left: 0;
+      width: 100%;
+      text-align: center; /* Centra la imagen si lo deseas */
+      img {
+        //max-width: 170px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 100%; /* Asegura que la imagen ocupe el ancho total del viewport */
+    height: 100px; /* Ajusta la altura según lo que necesites */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -100px;
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Vector%20135%20(1).png");
+    background-size: 100% 100%; /* La imagen se ajusta al contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ventajas {
+    //background-image: url(../img/bg-ventajas-xs.png);
+    padding-bottom: 120px;
+  }
+  .ventajas-regalo {
+    .img {
+      margin-top: 120px;
+    }
+    &::before {
+      height: 30px;
+      margin-top: -30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .ventajas {
+    //background-image: url(../img/bg-ventajas-sm.png);
+    .slider {
+      .item {
+        .c-block {
+          min-height: 270px;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .ventajas {
+    padding-bottom: 100px;
+    .slider {
+      .item {
+        .c-block {
+          min-height: 220px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

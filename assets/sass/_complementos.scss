@@ -1,0 +1,118 @@
+.titulo-1 {
+  font-family: "IBMPlexSans-SemiBold";
+  color: $COLOR_1;
+  span {
+    font-family: "IBMPlexSans-SemiBoldItalic";
+  }
+}
+
+.subtitulo-1 {
+  font-family: "IBMPlexSans-Regular";
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.titulo-2 {
+  // font-family: 'MyriadPro-Regular_0';
+  font-family: "IBMPlexSans-Regular";
+  // font-size: 2rem !important;
+  margin-bottom: 20px;
+  color: $COLOR_1;
+
+  span {
+    font-family: "IBMPlexSans-BoldItalic";
+  }
+
+  sup {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-1 {
+  text-decoration: none;
+  background: rgb(255, 132, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 132, 0, 1) 0%,
+    rgba(252, 57, 22, 1) 100%
+  );
+  color: #fff;
+  
+  font-family: 'IBMPlexSans-BoldItalic'; 
+  //text-transform: uppercase;
+  font-size: 1rem;
+  transition: 0.3s !important;
+  padding: 13px 17px;
+  -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  border-radius: 25px;
+
+  span {
+    font-family: "IBMPlexSans-Bold";
+  }
+
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.btn-1-ani{
+  .c-fa {
+      animation: c_keyframe_2 2s;
+      -webkit-animation: c_keyframe_2 2s;
+      -moz-animation: c_keyframe_2 2s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+    }
+}
+
+.c-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.c-padding {
+  padding: 20px;
+}
+
+.c-container-small {
+}
+
+@mixin bg-degradado {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 35, 70, 1) 69%
+  );
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .c-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .c-container {
+    // padding-left: 70px;
+    // padding-right: 70px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,57 @@
+.metodo{
+    background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/LP_BK_metodo_bg.png');
+    background-position: center center;
+    .txt{
+        h2{
+            font-family: 'IBMPlexSans-SemiBold';
+            color: #ffffff;
+            span{
+                font-family: 'IBMPlexSans-SemiBoldItalic'; 
+            }
+        }
+        h3{
+            font-family: 'IBMPlexSans-Regular'; 
+            color: #ffffff;
+            font-size: 1.1rem;
+            span{
+                font-family: 'IBMPlexSans-Bold'; 
+            }
+        }
+        
+    }
+    p{
+        &.sup{
+            color: #ffffff;
+            font-size: 1.2rem;
+            font {
+                font-family: 'IBMPlexSans-SemiBoldItalic';  
+                &.verde{
+                    color: #00E790;
+                }
+            }
+        }
+        &.mt-4{
+            font-size: .95rem;
+            color: #ffffff;
+        }
+        font{
+            color: #ffffff;
+        }
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

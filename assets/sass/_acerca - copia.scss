@@ -1,0 +1,265 @@
+.acerca {
+  padding: 0px;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+  background-color: #10141C;
+  
+  background-size: 100%;
+  padding-bottom: 70px;
+  img {
+    &.titulo {
+      max-height: 100px;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%; /* Asegura que la imagen ocupe el ancho total del viewport */
+    height: 50px; /* Ajusta la altura según lo que necesites */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    background-image: url("../img/after-acerca.png");
+    background-size: 100% 100%; /* La imagen se ajusta al contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .titulo {
+    font-family: "LilitaOne-Regular";
+    text-transform: uppercase;
+    color: $COLOR_6;
+    span {
+      color: #fff;
+      text-transform: initial;
+      clip-path: polygon(2% 0, 98% 0, 100% 100%, 0% 100%);
+      background-color: $COLOR_6;
+      padding: 5px 15px;
+      font-size: 1.5rem;
+    }
+    font {
+      display: block;
+      padding-left: 10px;
+      font-size: 2.8rem;
+    }
+  }
+  .items {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 25px 25px 20px 25px;
+    border-radius: 15px;
+    text-align: center;
+
+// box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.13);
+// -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.13);
+// -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.13);
+
+box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.19);
+-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.19);
+-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.19);
+
+    span {
+      background-color: #000;
+      color: #fff;
+      position: absolute;
+      padding: 3px 15px;
+      margin-top: -38px;
+      // font-family: "LilitaOne-Regular";
+      font-family: "MatchadalgonaRegular-3zxGp";
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      display: inline-block;
+      position: relative;
+      top: -40px;
+      img {
+        max-height: 20px;
+        margin-right: 10px;
+      }
+    }
+    p {
+      margin: 0px;
+      color: $COLOR_1;
+      font-family: "IBMPlexSans-Bold";
+      font-size: 1.05rem;
+      margin-bottom: 0px;
+      //text-align: center;
+      //margin-top: -20px;
+      &.small {
+        font-size: 1rem;
+        font-family: "IBMPlexSans-Light";
+      }
+    }
+    &.item-1 {
+      span {
+        background-color: $COLOR_7;
+      }
+    }
+    &.item-2 {
+      span {
+        background-color: $COLOR_8;
+      }
+    }
+    &.item-3 {
+      span {
+        background-color: #ff7ec0;
+      }
+    }
+    &.item-4 {
+      span {
+        background-color: #9986ff;
+      }
+    }
+    &.item-presencial {
+      position: relative;
+      .c-block {
+        text-align: center;
+        margin-top: -20px;
+      }
+      span {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        background-color: $COLOR_6;
+        font {
+          font-size: 1.4rem;
+          color: #65def1;
+        }
+      }
+      .sub-items {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .horario {
+          font-family: "MatchadalgonaRegular-3zxGp";
+          font-size: 1.1rem;
+          //text-transform: uppercase;
+        }
+        .det {
+          text-align: left;
+          ul {
+            li {
+              color: $COLOR_1;
+            }
+          }
+        }
+        &.c-border {
+          border-bottom: 1px solid #d9d9d9;
+        }
+        &.sub-item-1 {
+          .horario {
+            color: #ff70c4;
+          }
+        }
+        &.sub-item-2 {
+          .horario {
+            color: #f69e51;
+          }
+        }
+        &.sub-item-3 {
+          .horario {
+            color: #ff495c;
+          }
+        }
+        &.sub-item-4 {
+          .horario {
+            color: #1cc4ab;
+          }
+        }
+        &.sub-item-5 {
+          .horario {
+            color: #5441ca;
+          }
+        }
+      }
+    }
+    .img-title-item {
+      max-height: 90px;
+      margin-top: -50px;
+      margin-bottom: 20px;
+    }
+  }
+  .block-caracteristica {
+    p {
+      margin-top: -20px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .acerca {
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/MOBILE%20(2)%20(1).png");
+    &::before {
+      background-image: url("../img/after-acerca-xs.png");
+      top: 2px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .acerca {
+    &::before {
+      background-image: url("../img/after-acerca-xs.png");
+      top: 2px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .acerca {
+    .block-1 {
+      position: relative;
+      .titulo {
+        &::before {
+          content: url(../img/timon.png);
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          right: 50px;
+          transform: scale(0.7);
+          margin-top: -20px;
+        }
+      }
+      .items {
+        &.item-4 {
+          &::before {
+            // content: url(../img/grabs.png);
+            // position: absolute;
+            // width: 50px;
+            // height: 50px;
+            // right: -50px;
+            // transform: scale(0.7);
+            // margin-top: -50px;
+          }
+        }
+        &.item-presencial {
+          &::before {
+            //content: url(../img/cuerno.png);
+            // position: absolute;
+            // width: 50px;
+            // height: 50px;
+            // left: 320px;
+            // transform: scale(0.7);
+            // margin-top: -150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

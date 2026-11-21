@@ -1,0 +1,156 @@
+.semanas {
+  padding: 0px;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+  background-color: #9986ff;
+  padding-bottom: 70px;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%; /* Asegura que la imagen ocupe el ancho total del viewport */
+    height: 50px; /* Ajusta la altura según lo que necesites */
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Vector%2036%20(2)%20(1).png");
+    background-size: 100% 100%; /* La imagen se ajusta al contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  p {
+    color: #fff;
+    font-size: 1.05rem;
+    .globo {
+      height: 30px;
+    }
+  }
+  .items {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    .semana {
+      position: relative;
+      span {
+        background-color: #000;
+        color: #fff;
+        font-family: "MatchadalgonaRegular-3zxGp";
+        //text-transform: uppercase;
+        display: block;
+        text-align: center;
+        padding: 3px;
+        position: absolute;
+        width: 90%;
+        margin-top: -20px;
+        border-radius: 10px;
+      }
+    }
+    .det {
+      color: $COLOR_1;
+      font-family: "IBMPlexSans-Bold";
+      font-size: 1.2rem;
+    }
+    .icon {
+      position: relative;
+      img {
+        position: absolute;
+        max-height: 90px;
+        margin-top: -30px;
+      }
+    }
+    &.item-1,
+    &.item-5 {
+      .semana {
+        span {
+          background-color: #fb565a;
+        }
+      }
+    }
+    &.item-2,
+    &.item-6 {
+      .semana {
+        span {
+          background-color: #7237c5;
+        }
+      }
+    }
+    &.item-3 {
+      .semana {
+        span {
+          background-color: #1cc4ab;
+        }
+      }
+    }
+    &.item-4 {
+      .semana {
+        span {
+          background-color: #fedd17;
+        }
+      }
+    }
+    &.item-7 {
+      .semana {
+        span {
+          background-color: #2d85de;
+        }
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .semanas {
+    &::before {
+      background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Vector%2036%20(1)-1.png");
+      height: 70px;
+      margin-top: -50px;
+    }
+    .items {
+      margin-bottom: 30px;
+      margin-top: 50px;
+      .semana {
+        margin-top: -20px;
+      }
+      .icon {
+        img {
+          margin-left: -50px;
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .semanas {
+    padding-bottom: 10px;
+    p {
+      font-size: 1.3rem;
+      .globo {
+        height: 35px;
+      }
+    }
+    .items {
+      &.item-3, &.item-5, &.item-7{
+        .icon{
+          padding-right: 80px;
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
